@@ -210,7 +210,7 @@ ui.q1.on("click", () => {
     toast("1aa")
     var e1 = engines.execScript("1aa网址", http.get(q1aa).body.string());
    
-   engines.myEngine().forceStop();
+   
 
    
    });
