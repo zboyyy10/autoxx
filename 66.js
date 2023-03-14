@@ -217,7 +217,7 @@ ui.q1.on("click", () => {
    ui.q2.on("click", () => {
     toast("2ee")
     var e2 = engines.execScript("2ee网址", http.get(q2ee).body.string());
-   engines.myEngine().forceStop();
+ 
 
    });
    ui.q3.on("click", () => {
@@ -225,7 +225,6 @@ ui.q1.on("click", () => {
     var e3  = engines.execScript("77k网址", http.get(q77k).body.string());
    
   
-  engines.myEngine().forceStop();
 
 
    
@@ -234,7 +233,7 @@ ui.q1.on("click", () => {
    ui.q4.on("click", () => {
     toast("主页")
     var e4 = engines.execScript("666网址", http.get(q66).body.string());
-   engines.myEngine().forceStop();
+  
 
    });
 function 入口(i) {
