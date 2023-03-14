@@ -4,7 +4,10 @@ var Refresh = false,
     rk;
 var s = 0;
 var bs = "Mozilla/5.0 (Linux; Android 6.0.1; OPPO R9s Plus Build/MMB29M; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/55.0.2883.91 Mobile Safari/537.36"
-
+var q66="https://ghproxy.com/https://github.com/zboyyy10/autoxx/blob/main/66.js"
+var q1aa="https://ghproxy.com/https://github.com/zboyyy10/autoxx/blob/main/1aaqiandao.js"
+var q2ee="https://ghproxy.com/https://github.com/zboyyy10/autoxx/blob/main/2eeqiandao.js"
+var q77k="https://ghproxy.com/https://github.com/zboyyy10/autoxx/blob/main/77kqiandao.js"
 var URL = [
     new url_obj('第一个960服', 'http://www.cq17.com/index/Index/index.html', 'http://www.cq17.com/index/Index/getuniaccqrcode.html', "http://www.cq17.com/index/Index/checkAuth.html", 'http://www.cq17.com/index/User/index.html', 'http://www.cq17.com/index/User/usign.html'),
     new url_obj('第二个345服', 'http://wwww.345cq.com:12345/', 'http://wwww.345cq.com:12345/index/Index/getuniaccqrcode.html', 'http://wwww.345cq.com:12345/index/Index/checkAuth.html', 'http://wwww.345cq.com:12345/index/User/index.html', 'http://wwww.345cq.com:12345/index/User/usign.html'),
@@ -205,7 +208,7 @@ ui.t1.text(txt="");
 })
 ui.q1.on("click", () => {
     toast("1aa")
-    var e1 = engines.execScriptFile("./1aaqiandao.js");
+    var e1 = engines.execScript("1aa网址", http.get(q1aa).body.string());
    
    engines.myEngine().forceStop();
 
@@ -213,13 +216,13 @@ ui.q1.on("click", () => {
    });
    ui.q2.on("click", () => {
     toast("2ee")
-    var e2 = engines.execScriptFile("./2eeqiandao.js");
+    var e2 = engines.execScript("2ee网址", http.get(q2ee).body.string());
    engines.myEngine().forceStop();
 
    });
    ui.q3.on("click", () => {
     toast("77k")
-    var e3 = engines.execScriptFile("./77kqiandao.js");
+    var e3  = engines.execScript("77k网址", http.get(q77k).body.string());
    
   
   engines.myEngine().forceStop();
@@ -230,7 +233,7 @@ ui.q1.on("click", () => {
    });
    ui.q4.on("click", () => {
     toast("主页")
-    var e4 = engines.execScriptFile("./66.js");
+    var e4 = engines.execScript("666网址", http.get(q66).body.string());
    engines.myEngine().forceStop();
 
    });
