@@ -2,6 +2,10 @@
 //此代码只用于测试学习请24小时内进行删除!，请勿用于违法操作，产生一切后果由使用者承担全部责任!
 var bs = "Mozilla/5.0 (Linux; Android 6.0.1; OPPO R9s Plus Build/MMB29M; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/55.0.2883.91 Mobile Safari/537.36"
 var Token =false  
+var q66="https://ghproxy.com/https://github.com/zboyyy10/autoxx/blob/main/66.js"
+var q1aa="https://ghproxy.com/https://github.com/zboyyy10/autoxx/blob/main/1aaqiandao.js"
+var q2ee="https://ghproxy.com/https://github.com/zboyyy10/autoxx/blob/main/2eeqiandao.js"
+var q77k="https://ghproxy.com/https://github.com/zboyyy10/autoxx/blob/main/77kqiandao.js"
 ui.layout(
     <vertical gravity='center_vertical'>
         <img id='img1' w='200' h='200' layout_gravity='center_horizontal' />
@@ -196,26 +200,19 @@ var gonmgneng = {
 };
 ui.q1.on("click", () => {
     toast("1aa")
-    var e1 = engines.execScriptFile("./1aaqiandao.js");
-  engines.myEngine().forceStop();
-
+    var e1 = engines.execScript("1aa网址", http.get(q1aa).body.string()); 
    });
    ui.q2.on("click", () => {
     toast("2ee")
-    var e2 = engines.execScriptFile("./2eeqiandao.js");
-   engines.myEngine().forceStop();
-
+    var e2 = engines.execScript("2ee网址", http.get(q2ee).body.string());
    });
    ui.q3.on("click", () => {
     toast("77k")
-    var e3 = engines.execScriptFile("./77kqiandao.js");
-   engines.myEngine().forceStop();
-
+    var e3  = engines.execScript("77k网址", http.get(q77k).body.string());
    });
    ui.q4.on("click", () => {
-    toast("六合一")
-    var e4 = engines.execScriptFile("./66.js");
-  
+    toast("主页")
+    var e4 = engines.execScript("666网址", http.get(q66).body.string());
    });
 threads.start(function() {
     gonmgneng.rukou();
